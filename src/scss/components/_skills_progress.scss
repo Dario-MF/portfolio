@@ -1,0 +1,188 @@
+
+.progress_bar_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    background-color: $color-fourth;
+    color: $color-text-light;
+    position: relative;
+    z-index: $z-back;
+}
+
+.progress_bar_title {
+    position: relative;
+    @include box-title;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.progress_bar_list {
+    width: 100%;
+}
+
+.progress_bar_list li {
+    margin: 0 0 1.5em;
+}
+
+.progress_bar_name {
+    font-size: $font-size;
+    font-weight: 300;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: .5rem;
+    @include bar_name_icon
+}
+
+.progress_bar_javascript::before {
+    background: url(../../assets/img/js_icon.png) no-repeat 0 0;
+    background-size: 100%;
+}
+.progress_bar_react::before {
+    background: url(../../assets/img/react_icon.png) no-repeat 0 0;
+    background-size: 90%;
+}
+.progress_bar_javascript::before {
+    background: url(../../assets/img/js_icon.png) no-repeat 0 0;
+    background-size: 100%;
+}
+.progress_bar_node::before {
+    background: url(../../assets/img/node_icon.png) no-repeat 0 0;
+    background-size: 90%;
+}
+.progress_bar_mongo::before {
+    background: url(../../assets/img/mongo_icon.png) no-repeat 0 0;
+    background-size: 100%;
+}
+.progress_bar_html::before {
+    background: url(../../assets/img/html_icon.png) no-repeat 0 0;
+    background-size: 100%;
+}
+.progress_bar_css::before {
+    background: url(../../assets/img/css_icon.png) no-repeat 0 0;
+    background-size: 100%;
+}
+.progress_bar_sass::before {
+    background: url(../../assets/img/sass_icon.png) no-repeat 0 0;
+    background-size: 100%;
+}
+.progress_bar_rwd::before {
+    background: url(../../assets/img/rwd_icon.png) no-repeat 0 0;
+    background-size: 80%;
+}
+
+.progress_bar {
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0,0,0, .3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0, .12), 0 1px 2px rgba(0,0,0, .24);
+    transition: all .3s cubic-bezier(.25, .8, .25,1);
+
+    span {
+        height: 20px;
+        float: left;
+        background: linear-gradient(90deg, rgba(244,129,5,1) 8%, rgba(253,175,29,1) 29%, rgba(253,176,30,1) 50%, rgba(252,241,69,1) 81%);
+    }
+}
+
+.html {
+    width: 90%;
+    animation: html 3s;
+}
+.css {
+    width: 85%;
+    animation: css 3s;
+}
+.sass {
+    width: 80%;
+    animation: sass 3s;
+}
+.mongo {
+    width: 80%;
+    animation: mongo 3s;
+}
+.javascript {
+    width: 90%;
+    animation: javascript 3s;
+}
+.react {
+    width: 80%;
+    animation: react 3s;
+}
+.node {
+    width: 70%;
+    animation: node 3s;
+}
+.rwd {
+    width: 80%;
+    animation: rwd 3s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+@keyframes sass {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes rwd {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes mongo {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes node {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}

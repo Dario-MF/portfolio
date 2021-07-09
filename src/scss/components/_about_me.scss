@@ -1,0 +1,19 @@
+
+.about_me_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+
+    .about_me_title {
+        margin-bottom: .5rem;
+        position: relative;
+        @include box-title
+    }
+
+    .about_me_text {
+        text-align: center;
+        font-weight: 400;
+    }
+}
