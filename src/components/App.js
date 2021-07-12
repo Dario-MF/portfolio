@@ -1,5 +1,7 @@
 import AboutMe from "./AboutMe"
+import FormContact from "./FormContact"
 import Header from "./Header"
+import MyProyects from "./MyProyects"
 import SkillsBarProgress from "./SkillsBarProgress"
 
 
@@ -10,6 +12,8 @@ const App = () => {
       <Header />
       <AboutMe />
       <SkillsBarProgress />
+      <MyProyects />
+      <FormContact />
     </div>
   );
 }

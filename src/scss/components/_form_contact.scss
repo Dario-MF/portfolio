@@ -1,0 +1,17 @@
+
+
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: $color-fourth;
+    color: $color-text-light;
+    
+}
+.contact_title {
+    margin-bottom: 1rem;
+    position: relative;
+    font-weight: 500;
+    @include box-title
+}

@@ -1,0 +1,104 @@
+
+
+.my_proyects_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.my_proyects_title {
+    margin-bottom: 1rem;
+    position: relative;
+    @include box-title
+}
+.my_proyects_subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    a {
+        color: $color-third;
+    }
+    a:hover{
+        color: rgb(255, 174, 0);
+    }
+}
+
+.proyect_card {
+    background-color: $color-text-bold;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 3em;
+    cursor: pointer;
+}
+ 
+.proyect_card_img {
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease; 
+    filter: brightness(70%);
+}
+
+.proyect_card_info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: .5rem;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom:0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(0deg, rgba(9, 11, 22, 0.99) 24%, rgba(29, 26, 44, 0.7) 56%, rgba(0,0,0,0) 100%);
+}
+
+.proyect_card_info img {
+    width: 30px;
+    height: 30px;
+    margin: 0 .2rem;
+    
+}
+.proyect_card .proyect_card_title {
+    margin: 0;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    font-size: $font-size-title;
+    font-weight: bold;
+    transition: all 0.15s linear;
+    color: $color-light;
+    font-weight: 500;
+}
+ 
+.proyect_card .proyect_card_subtitle {
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: -150%;
+    transition: all .5s ease-in-out;
+    color: $color-light;
+}
+ 
+
+ 
+.proyect_card:hover{
+
+    .proyect_card_info {
+        height: 100%;
+    }
+
+    .proyect_card_title {
+        left: 5%;
+        bottom: 45%;
+    }
+    .proyect_card_subtitle {
+        left: 10%;
+        top: 60%;
+    }
+} 

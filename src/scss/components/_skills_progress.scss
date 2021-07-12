@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 4rem 2rem;
     margin-bottom: 4rem;
     background-color: $color-fourth;
     color: $color-text-light;
@@ -14,7 +14,7 @@
 .progress_bar_title {
     position: relative;
     @include box-title;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-weight: 500;
 }
 
@@ -89,35 +89,35 @@
     }
 }
 
-.html {
+.scrolled.html {
     width: 90%;
     animation: html 3s;
 }
-.css {
+.scrolled.css {
     width: 85%;
     animation: css 3s;
 }
-.sass {
+.scrolled.sass {
     width: 80%;
     animation: sass 3s;
 }
-.mongo {
+.scrolled.mongo {
     width: 80%;
     animation: mongo 3s;
 }
-.javascript {
+.scrolled.javascript {
     width: 90%;
     animation: javascript 3s;
 }
-.react {
+.scrolled.react {
     width: 80%;
     animation: react 3s;
 }
-.node {
+.scrolled.node {
     width: 70%;
     animation: node 3s;
 }
-.rwd {
+.scrolled.rwd {
     width: 80%;
     animation: rwd 3s;
 }
