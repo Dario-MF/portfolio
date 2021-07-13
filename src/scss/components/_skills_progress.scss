@@ -12,10 +12,8 @@
 }
 
 .progress_bar_title {
-    position: relative;
     @include box-title;
     margin-bottom: 3rem;
-    font-weight: 500;
 }
 
 .progress_bar_list {

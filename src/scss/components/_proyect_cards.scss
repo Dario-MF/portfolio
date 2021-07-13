@@ -9,9 +9,9 @@
 
 .my_proyects_title {
     margin-bottom: 1rem;
-    position: relative;
     @include box-title
 }
+
 .my_proyects_subtitle {
     text-align: center;
     margin-bottom: 3rem;

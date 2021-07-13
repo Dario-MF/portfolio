@@ -1,0 +1,17 @@
+
+
+.social_bar_active {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: $z-fixed;
+    background-color: $color-text-bold;
+    width: 100%;
+    justify-content: space-around;
+    padding: .7rem 0;
+    transition: 0.5s;
+    .social_bar_item i {
+        color: $color-text-light;
+        font-size: 1.8rem;
+    }
+}

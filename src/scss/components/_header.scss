@@ -51,7 +51,13 @@
 
     }
 
+    a {
+        display: flex;
+        justify-content: center;
+    }
+
     .btn_download_cv {
+        outline: none;
         cursor: pointer;
         margin: 1.5rem auto 0;
         color:  $color-third ;
