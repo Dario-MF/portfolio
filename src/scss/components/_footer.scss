@@ -2,10 +2,13 @@
 
 .footer_box {
     background-color: rgb(34, 32, 44);
-    padding: 0 2rem;
-    height: 11rem;
+    padding: 2rem 2rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
+    @include mq(l){
+        align-items: center;
+    }
 
     .copyright {
         text-align: center;
@@ -17,18 +20,31 @@
     .social_links {
         width: 100%;
         display: none;
-        margin-bottom: 2rem;
-        display: flex;
+        margin: 1rem 0;
         justify-content: flex-end;
+        @include mq(l){
+            display: flex;
+        }
         .social_bar_list {
             display: none;
             width: 100%;
             justify-content: space-around;
+            @include mq(l){
+                display: flex;
+            }
             .social_bar_item i {
                 color: $color-text-light;
                 font-size: 1.8rem;
             }
         }
+        
     }
+    a {
+        display: flex;
+        justify-content: center;
+        .btn_download_cv {
+            margin: 1rem auto;
+        }
+    } 
 }
 

@@ -2,7 +2,9 @@
 
 .my_proyects_box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     padding: 0 2rem;
 }
@@ -22,6 +24,21 @@
     a:hover{
         color: rgb(255, 174, 0);
     }
+}
+
+.my_proyects_cards {
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include mq(l){
+        padding: 0 .8rem;
+    }
+    @include mq(xl){
+        padding: 0 5rem;
+    }
+
 }
 
 .proyect_card {

@@ -5,6 +5,16 @@
     align-items: center;
     padding: 0 2rem;
     margin-bottom: 4rem;
+    @include mq(s){
+        padding: 0 5rem;
+    }
+    @include mq(m){
+        padding: 0 5rem;
+    }
+    @include mq(l){
+       width: 70%;
+       margin: 0 auto 4rem;
+    }
 
     .about_me_title {
         margin-bottom: .5rem;

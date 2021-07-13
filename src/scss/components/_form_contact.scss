@@ -7,6 +7,18 @@
     padding: 4rem 2rem 3rem;
     background-color: $color-fourth;
     color: $color-text-light; 
+    @include mq(s){
+        padding: 4rem 4rem;
+    }
+    @include mq(m){
+        padding: 4rem 5rem;
+    }
+    @include mq(l){
+        padding: 4rem 10rem;
+    }
+    @include mq(xl){
+        padding: 4rem 15rem;
+    }
 }
 
 .contact_title {
@@ -23,12 +35,18 @@
 
 .form_group {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     i {
         font-size: 1.3rem;
+    }
+    @include mq(xl){
+        margin-bottom: 2rem;
+        i {
+            font-size: 1.6rem;
+        }
     }
 }
 
@@ -46,7 +64,7 @@
     transition: all .3s cubic-bezier(.25, .8, .25,1);
 
     &:focus {
-        background: #454c5c;
+        background: #2a2538;
         border: 1px solid $color-third;
     }
 }
@@ -60,7 +78,18 @@
     padding: .5rem .8rem;
     font-family: $body-font ;
     background-color: rgba(0, 0, 0, 0);
-
+    @include mq(s){
+        padding: .5rem 1rem;
+    }
+    @include mq(m){
+        padding: .5rem 2rem;
+    }
+    @include mq(l){
+        padding: .5rem 3rem;
+    }
+    @include mq(xl){
+        padding: .5rem 4rem;
+    }
     &:hover{
         color: $color-text-light;
         border: 2px solid $color-text-light;

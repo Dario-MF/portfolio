@@ -1,4 +1,5 @@
 import React from 'react';
+import cvPdf from "../assets/downloads/curriculum_dario_mariño.pdf";
 
 const Footer = () => {
     return (
@@ -22,9 +23,12 @@ const Footer = () => {
                             <a href="#header" rel="noopener noreferrer"><i className="bi bi-arrow-up-square"></i></a>
                         </li>
                     </ul> 
-                </aside> 
+                </aside>
                 <p className="copyright">Programado con ❤️ y mucho ☕</p>
-                <p className="copyright">© 2021 Todos los derechos reservados • Dario Mariño Ferrada</p>
+                <p className="copyright">© 2021 Todos los derechos reservados • Dario Mariño Ferrada</p> 
+                <a href={cvPdf} download="Curriculum_Dario_Mariño">
+                    <button className='btn_download_cv' >Download CV</button>
+                </a> 
             </div>
         </footer>
     )

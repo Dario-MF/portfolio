@@ -2,11 +2,19 @@
 .header{
     background-color: $color-fourth;
     margin-bottom: 4rem;
+    @include mq(800px){
+        display: flex; 
+        align-items: flex-end;
+    }
 }
 
 .header_box_img {
     width: 100%;
     height: 60vh;
+    @include mq(800px){
+        width: 50%;
+        
+    }
     .box_yellow {
         width: 80px;
         height: 200px;
@@ -15,14 +23,41 @@
         top: 0;
         left: 50%;
         background-color: $color-third;
+        @include mq(s){
+            left: 60%;
+       }
+        @include mq(m){
+            left: 50%;
+       }
+       @include mq(800px){
+           left: 25%;
+        }
+       @include mq(l){
+           left: 35%;
+        }
+       @include mq(xl){
+           left: 35%;
+        }
     }
 
     .box_img {
-        width: 170px;
+        width: 180px;
         position: absolute;
         z-index: $z-tooltip;
         top: 2em;
         left: 20%;
+        @include mq(s){
+            left: 30%;
+        }
+        @include mq(800px){
+            left: 10%;
+        }
+        @include mq(l){
+            left: 20%;
+        }
+        @include mq(l){
+            left: 25%;
+        }
     }
 }
 
@@ -56,22 +91,22 @@
         justify-content: center;
     }
 
-    .btn_download_cv {
-        outline: none;
-        cursor: pointer;
-        margin: 1.5rem auto 0;
-        color:  $color-third ;
-        border: 2px solid $color-third;
-        @include round;
-        padding: .5rem .8rem;
-        font-family: $body-font ;
-        background-color: rgba(0, 0, 0, 0);
+    
 
-        &:hover{
-            color: $color-text-light;
-            border: 2px solid $color-text-light;
-            transition: all .5s ease-in-out;
-        }
+}
+.btn_download_cv {
+    outline: none;
+    cursor: pointer;
+    margin: 1.5rem auto 0;
+    color:  $color-third ;
+    border: 2px solid $color-third;
+    @include round;
+    padding: .5rem .8rem;
+    font-family: $body-font ;
+    background-color: rgba(0, 0, 0, 0);
+    &:hover{
+        color: $color-text-light;
+        border: 2px solid $color-text-light;
+        transition: all .5s ease-in-out;
     }
-
 }
