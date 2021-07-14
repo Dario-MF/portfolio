@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 
 
 const FormContact = () => {
@@ -25,7 +26,7 @@ const FormContact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        fetch('http://localhost:3002/send-email', {
+        fetch('https://dmf-portafolio.herokuapp.com/api/send-email', {
             method: "POST",
             body: JSON.stringify(form),
             headers: {
@@ -35,12 +36,19 @@ const FormContact = () => {
         })
             .then( (response) => (response.json()))
             .then((response)=> {
-                console.log(response)
                 if (response.resp.accepted) {
-                    alert("Mensaje Enviado.");
+                    Swal.fire(
+                        'Mensaje Enviado!',
+                        `${form.name} su mensaje se envio correctamente!`,
+                        'success'
+                    );
                     resetForm();   
                 } else {
-                    alert("Fallo al enviar el mensaje.")
+                    Swal.fire(
+                        'Oops...',
+                        "Ocurrio un error al enviar su mensaje.",
+                        'error'
+                    );
                 }
             })
     };

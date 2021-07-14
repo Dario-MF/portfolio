@@ -1,1 +1,2 @@
-# Portafolio Frontend Personal.
+# PORTAFOLIO PERSONAL
+    - Realizado en React, Sass y API en Nodejs.
